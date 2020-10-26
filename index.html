@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency rates by skjoeldkrona</title>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <div class="container" id="mainContainer">
+            <div class="container-flex" id="appHeader">
+                <div id="currencyImage">
+                    <img src="./artwork/money-svgrepo-com.svg" alt="dollar banknote icon">
+                </div>
+                <div id="appName">
+                    <span id="currencyCalc">Przelicznik walut</span>
+                </div>
+            </div>    
+            <div class="converter container-flex">
+                <div>
+                    <input id="amount" placeholder="0" value="0" autocomplete="off">
+                    <div id="select"></div>
+                    <button id="btnCalculate">Przelicz</button>
+                    <span>to: <span id="result">0</span> zł</span>
+                </div>    
+            </div>
+        </div>    
+    </main>
+    <footer class="container">
+        currency converter by skjoeldkrona
+    </footer>
+<script src="index.js" defer></script>    
+</body>
+</html>
